@@ -26,10 +26,9 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 # Set the prompt to '\n<directory> $ '.
 # https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
 parse_current_directory() {
-  pwd | sed -e "s/^\/Users\/peterlavigne\/src\///"
+    pwd | sed -e "s|^$HOME/||"
 }
 BLUE='\[\e[0;34m\]'
-GREEN='\[\e[0;32m\]'
 WHITE='\[\e[0;00m\]'
 export PS1="\n${BLUE}\$(parse_current_directory)${WHITE} $ "
 
