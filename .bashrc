@@ -28,7 +28,7 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 parse_current_directory() {
     pwd | sed -e "s|^$HOME/||"
 }
-BLUE='\[\e[0;34m\]'
+CYAN='\[\e[0;96m\]'
 WHITE='\[\e[0;00m\]'
-export PS1="\n${BLUE}\$(parse_current_directory)${WHITE} $ "
+export PS1="\n${CYAN}\$(parse_current_directory)${WHITE} $ "
 
