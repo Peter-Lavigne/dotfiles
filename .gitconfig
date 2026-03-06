@@ -1,0 +1,11 @@
+[credential]
+	helper = store
+[user]
+	email = fake@email.com
+	name = Peter-Lavigne
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[diff]
+	external = difft
