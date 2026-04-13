@@ -1,3 +1,10 @@
+# Only run the rest of this file in interactive Bash shells.
+# ~/.profile may source ~/.bashrc during graphical login, where there is no TTY.
+case "$-" in
+    *i*) ;;
+      *) return ;;
+esac
+
 # https://web.archive.org/web/20090815205011/http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
 shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"

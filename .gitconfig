@@ -1,7 +1,7 @@
 [credential]
 	helper = store
 [user]
-	email = fake@email.com
+	email = 31020403+Peter-Lavigne@users.noreply.github.com
 	name = Peter-Lavigne
 [init]
 	defaultBranch = main
